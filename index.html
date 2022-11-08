@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="category">category:html</div>
+        <div class="numbers">
+          <span id="first"></span> of <span id="thespan">05</span>
+        </div>
+      </div>
+      <div class="body">
+        <h3></h3>
+        <div class="ansers">
+          <div id="check"></div>
+          <div id="label"></div>
+        </div>
+      </div>
+      <div class="footer">
+        <div id="bullets"></div>
+        <div id="timer">1:45</div>
+      </div>
+      <div id="submit">
+        <button>submit</button>
+      </div>
+
+      <div id="congrats"></div>
+
+      <div class="box-history">
+        <h3></h3>
+        <div class="ansers">
+          <div id="check"></div>
+          <div id="label"></div>
+        </div>
+      </div>
+    </div>
+    <div id="buttons">
+      <button id="restart" onclick="theindex()">restart</button>
+      <button id="showanswers" ondblclick="hideanswers()" onclick=" showtask()">
+        show answers
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

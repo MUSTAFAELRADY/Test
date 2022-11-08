@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    padding: 0.2rem;
+    font-size: large;
+}
+
+body {
+    font-family: Tahoma, Arial;
+}
+
+button {
+    cursor: pointer;
+    background-color: aquamarine;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.container {
+    background-color: #999;
+    width: 90%;
+    margin: auto;
+    margin-top: 4rem;
+    padding: .7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .header {
+    background-color: #777;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .body,
+.container .box-history {
+    width: 100%;
+    background-color: #666;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.container .body .ansers,
+.container .box-history .ansers {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.ansers {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.ansers #check {
+    display: flex;
+    flex-direction: column;
+}
+
+.ansers #check input {
+    height: 2rem;
+    width: 1.5rem;
+}
+
+.ansers #label {
+    display: flex;
+    flex-direction: column;
+}
+
+.ansers #label label {
+    height: 2rem;
+    font-size: .6rem;
+    margin: 0.15rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color: #555;
+    padding: .8rem;
+}
+
+#submit {
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit button {
+    width: 100%;
+    margin: auto;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+#submit button:hover,
+#submit button:focus {
+    opacity: 0.5;
+}
+
+.on {
+    background-color: aqua;
+}
+
+#bullets span {
+    background-color: black;
+    height: 0.1rem;
+    width: 0.05rem;
+    border-radius: 50%;
+    padding: .00rem .4rem;
+    margin: .16rem;
+}
+
+#bullets span.on {
+    background-color: aqua;
+}
+
+#congrats {
+    text-align: center;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#showanswers {
+    display: none;
+}
+/* ///// */
+.no-click {
+    pointer-events: none;
+}
